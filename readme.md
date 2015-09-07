@@ -22,7 +22,7 @@ module.exports = (
 )::mini();
 
 module.exports = (
-	props => <h1>Title: {props.title}</h1> 
+	{ title } => <h1>Title: {title}</h1> 
 )::pure();
 ```
 
