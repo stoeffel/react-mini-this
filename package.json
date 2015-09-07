@@ -1,6 +1,6 @@
 {
   "name": "react-mini-this",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React components as pure functions with function bind syntax",
   "license": "MIT",
   "repository": "stoeffel/react-mini-this",
