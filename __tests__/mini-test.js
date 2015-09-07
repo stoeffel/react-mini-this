@@ -23,7 +23,7 @@ describe('React-Mini-This', () => {
 	});
 
   it('should update the state', () => {
-		const Counter = (({ step = 3 }, { setState, state: {count} }) => {
+		const Counter = function ({ step = 3 }, { setState, state: {count} }) {
 			const incCounter = () => setState({ count : count + step });
 
 				return (
@@ -31,7 +31,7 @@ describe('React-Mini-This', () => {
 					  Counter: <span>{count}</span>
 						<button onClick={incCounter}>+1</button>
 					</div>);
-		})::mini( { count: 10 });
+		}::mini( { count: 10 });
 
 		const component = TestUtils.renderIntoDocument( <Counter step={10}/>);
 		const countValue = TestUtils.findRenderedDOMComponentWithTag(component, 'span');

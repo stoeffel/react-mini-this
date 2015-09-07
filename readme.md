@@ -30,8 +30,8 @@ module.exports = (
 
 ```js
 
-function Counter ( ({ step = 1 } , { setState, state: { count } }) { 
-  var incCounter = () => setState({ count : count + step });
+const Counter = function ( ({ step = 1 } , { setState, state: { count } }) { 
+	var incCounter = () => setState({ count : count + step });
 
   return <span>Counter: {count}<button onClick={incCounter}>+1</button></span> 
 }::mini( { count: 10 });
