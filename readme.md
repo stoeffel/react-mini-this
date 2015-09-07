@@ -18,11 +18,11 @@ var pure = require('react-mini-this/pure');
 
 
 module.exports = (
-	props => <h1>Title: {props.title}</h1> 
+  props => <h1>Title: {props.title}</h1> 
 )::mini();
 
 module.exports = (
-	{ title } => <h1>Title: {title}</h1> 
+  { title } => <h1>Title: {title}</h1> 
 )::pure();
 ```
 
@@ -31,7 +31,7 @@ module.exports = (
 ```js
 
 function Counter ( ({ step = 1 } , { setState, state: { count } }) { 
-	var incCounter = () => setState({ count : count + step });
+  var incCounter = () => setState({ count : count + step });
 
   return <span>Counter: {count}<button onClick={incCounter}>+1</button></span> 
 }::mini( { count: 10 });
